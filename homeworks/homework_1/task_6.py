@@ -8,8 +8,8 @@
 result_a = input("Enter the first result: ")
 result_b = input("Enter the second result: ")
 
-result_a = int(result_a)
-result_b = int(result_b)
+result_a = float(result_a)
+result_b = float(result_b)
 
 if result_a <= 0:
     print("ERROR.")
@@ -20,6 +20,7 @@ day = 1
 while result_a < result_b:
     result_a += result_a * 0.1
     day = day + 1
+    print(day, result_a)
 
 
 print("DAY:", day)

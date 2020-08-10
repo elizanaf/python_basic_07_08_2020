@@ -8,7 +8,7 @@ seconds = 0
 time_in_sec = input("Enter time in seconds... ")
 
 if int(time_in_sec) < 0:
-    print("Error")
+    print("Invalid time.")
     exit(1)
 
 time_in_sec = int(time_in_sec)
@@ -28,5 +28,5 @@ else:
     seconds = time_in_sec - minutes * 60
 
 
+print('Time in format hh:mm:ss: {0:02}:{1:02}:{2:02}' .format(hours,minutes,seconds))
 
-print(hours, ":", minutes, ":", seconds)
