@@ -5,6 +5,10 @@
 """
 
 def read_list(*flag):
+    """ Reads the list.
+    :param flag: int
+    :return:
+    """
     flag = 1
     list = []
     while True:
@@ -20,13 +24,13 @@ def read_list(*flag):
             return
 
 
-flag = 0
+flag = 1
 
 my_list = read_list(flag)
 
+
 if(flag == 0):
     exit(1)
-
 
 new_list = [el for idx, el in enumerate(my_list) if idx != 0 and el > my_list[idx - 1]]
 
